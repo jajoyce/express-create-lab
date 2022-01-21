@@ -17,7 +17,7 @@ module.exports = [
   { 
     name: "Crib", 
     price: 200, 
-    img: "https://s-media-cache-ak0.pinimg.com/originals/99/29/ee/9929eef9086e07bd7e50102bc37ff3a8.jpg"
+    img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.hayneedle.com%2Fmgen%2Fmaster%3ASCM096.jpg&f=1&nofb=1"
   },
   { 
     name: "Coat", 
@@ -32,7 +32,7 @@ module.exports = [
   { 
     name: "Concussion", 
     price: 0, 
-    img: "http://youngmenshealthsite.org/wp-content/uploads/2015/05/concussion1-150x150.jpg"
+    img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmediad.publicbroadcasting.net%2Fp%2Fwsiu%2Ffiles%2F201309%2Fconcussion_1.jpg&f=1&nofb=1"
   },
   { 
     name: "Coal", 
@@ -42,7 +42,7 @@ module.exports = [
   { 
     name: "Cyclone", 
     price: 70000, 
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Cyclone_Mala.JPG/150px-Cyclone_Mala.JPG"
+    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pelagodental.com.au%2Fwp-content%2Fuploads%2F2016%2F11%2Fshutterstock_130635224_rendered.jpg&f=1&nofb=1"
   },
   { 
     name: "Career", 
@@ -52,11 +52,11 @@ module.exports = [
   { 
     name: "Cillian Murphy", 
     price: 400, 
-    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thefamouspeople.com%2Fprofiles%2Fimages%2Fcillian-murphy-1.jpg&f=1&nofb=1"
+    img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-Slai_E2w4a4%2FUAV1du8jJ7I%2FAAAAAAAAA50%2Fv9jCG5qOmK0%2Fs1600%2Ftumblr_m7a908b1Q31qcb487o1_1280.jpg&f=1&nofb=1"
   },
   { 
     name: "Climate Change", 
     price: 9, 
-    img: "http://scitechdaily.com/images/Detailed-Global-Climate-Change-Projections-150x150.jpg" 
+    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh3.googleusercontent.com%2FnnrFv-c9rIEXU-NEuT0V06D6f6nDP4Y3KWyGC_PDvtY2IfzQc6pYqiW3oCLPlnmt314QoH89%3Dp&f=1&nofb=1" 
   }
 ];

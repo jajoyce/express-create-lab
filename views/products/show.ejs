@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="public/styles/main.css">
+    <link rel="stylesheet" href="../public/styles/main.css">
     <title>Show Product - Express Create Lab</title>
 </head>
 <body class="has-navbar-fixed-top has-background-grey-lighter">
@@ -21,8 +21,31 @@
             <p class="title">Product Page</p>
         </div>
     </section>
-    <main class="has-text-centered">
-        <h1 class="title is-1">Product Page</h1>
+    <main class="container">
+        <div class="columns is-centered">
+            <div class="column is-four-fifths">
+                <article class="card has-background-light">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="card-image">
+                                <figure class="image img-400 img-card-figure media-left">
+                                    <img src="<%= product.img %>" alt="Product image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h4><%= product.name %></h4>
+                                    <h4>$<%= product.price %></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <% for (let i = 0; i < 10; i++) { %>
+            <br>
+        <% } %>
     </main>
 </body>
 </html>

@@ -24,7 +24,7 @@ app.get('/products', (req, res) => {
 
 // product show route
 app.get('/products/:id', (req, res) => {
-  res.send(products[req.params.id]);
+  res.render('products/show.ejs', { product: products[req.params.id] });
 });
 
 // catch-all redirect

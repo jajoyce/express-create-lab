@@ -3,7 +3,7 @@ body {
 }
 
 .hero {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .img-card-figure {
@@ -14,4 +14,8 @@ body {
     object-fit: cover;
     width: 128px;
     height: 128px;
+}
+
+.img-400 {
+    max-width: 400px;
 }

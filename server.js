@@ -5,17 +5,16 @@ const PORT = 3000;
 
 // middleware
 app.use(express.urlencoded({ extended: false }));
+app.use('/public', express.static('./public'));
+
+app.set('view engine', 'ejs');
 
 // db
 const products = require('./products');
 
 // main site index route
 app.get('/', (req, res) => {
-  res.send(`
-  <h1>Home Page</h1>
-  <h3>This is working<h3>
-  <h3><a href='/products'>Go to Products page</a></h3>
-  `)
+  res.render('index.ejs')
 })
 
 // product index route
@@ -27,6 +26,9 @@ app.get('/products', (req, res) => {
 app.get('/products/:id', (req, res) => {
   res.send(products[req.params.id]);
 });
+
+// catch-all redirect
+app.get('/*', (req, res) => res.redirect('/'));
 
 // product create route
 app.post('/products', (req, res) => {

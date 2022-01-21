@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="public/styles/main.css">
     <title>Express Create Lab</title>
 </head>
-<body class="has-navbar-fixed-top">
+<body class="has-navbar-fixed-top has-background-grey-lighter">
     <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">Home</a>
@@ -16,16 +16,19 @@
             <a class="navbar-item" href="/products/new"> Create New Product </a>
         </div>
     </nav>
-    <section class="hero is-primary has-text-centered">
+    <section class="hero is-info has-text-centered">
         <div class="hero-body">
             <p class="title">Home Page</p>
         </div>
     </section>
     <main class="has-text-centered">
-        <h3 class="title is-3"><a href="/products">View All Products</a></h3>
-        <h3 class="title is-3"><a href="/products/new">Create New Product</a></h3>
-        <h4 class="title is-4">(This is working!)<h3>
+        <h3 class="title is-3"><a href="/products">View All Products</a></h3><br>
+        <h3 class="title is-3"><a href="/products/new">Create New Product</a></h3><br>
+        <h4 class="title is-4">(This is working!)<h3><br><br><br>
         <p>Express Create Lab - John Joyce</p>
+        <% for (let i = 0; i < 12; i++) { %>
+            <br>
+        <% } %>
     </main>
 </body>
 </html>

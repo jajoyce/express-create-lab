@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="public/styles/main.css">
     <title>All Products - Express Create Lab</title>
 </head>
-<body class="has-navbar-fixed-top">
+<body class="has-navbar-fixed-top has-background-grey-lighter">
     <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">Home</a>
@@ -16,13 +16,39 @@
             <a class="navbar-item" href="/products/new"> Create New Product </a>
         </div>
     </nav>
-    <section class="hero is-primary has-text-centered">
+    <section class="hero is-info has-text-centered">
         <div class="hero-body">
             <p class="title">All Products</p>
         </div>
     </section>
-    <main class="has-text-centered">
-        <h1 class="title is-1">All Products</h1>
+    <main class="container">
+        <div class="columns is-multiline is-centered">
+            <% for (let i = 0; i < products.length; i++) { %>
+                <% let product = products[i]; %>
+                <div class="column is-three-fifths">
+                    <article class="card has-background-light">
+                        <div class="level">
+                            <div class="level-left">
+                                <div class="card-image">
+                                    <figure class="image is-128x128 img-card-figure media-left">
+                                        <a href="/products/<%= i %>">
+                                            <img src="<%= product.img %>" class="square-img-128" alt="Product image">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h4><a href="/products/<%= i %>"><%= product.name %></a></h4>
+                                        <h4>$<%= product.price %></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            <% } %>
+        </div>
     </main>
 </body>
 </html>

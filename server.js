@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 // product index route
 app.get('/products', (req, res) => {
-  res.send(products);
+  res.render('products/index.ejs', { products });
 });
 
 // product show route

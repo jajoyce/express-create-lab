@@ -1,3 +1,17 @@
+body {
+    padding-bottom: 80px;
+}
+
 .hero {
     margin-bottom: 40px;
+}
+
+.img-card-figure {
+    margin: 10px;
+}
+
+.square-img-128 {
+    object-fit: cover;
+    width: 128px;
+    height: 128px;
 }

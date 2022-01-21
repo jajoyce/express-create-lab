@@ -9,6 +9,15 @@ app.use(express.urlencoded({ extended: false }));
 // db
 const products = require('./products');
 
+// main site index route
+app.get('/', (req, res) => {
+  res.send(`
+  <h1>Home Page</h1>
+  <h3>This is working<h3>
+  <h3><a href='/products'>Go to Products page</a></h3>
+  `)
+})
+
 // product index route
 app.get('/products', (req, res) => {
   res.send(products);

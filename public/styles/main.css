@@ -19,3 +19,15 @@ body {
 .img-400 {
     max-width: 400px;
 }
+
+.form-card {
+    padding: 25px 25px 10px 25px;
+}
+
+.form-buttons {
+    margin-top: 30px;
+}
+
+.control {
+    margin-bottom: 20px;
+}

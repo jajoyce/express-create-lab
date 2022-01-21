@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="public/styles/main.css">
+    <link rel="stylesheet" href="../public/styles/main.css">
     <title>New Product - Express Create Lab</title>
 </head>
 <body class="has-navbar-fixed-top has-background-grey-lighter">
@@ -21,8 +21,44 @@
             <p class="title">Create New Product</p>
         </div>
     </section>
-    <main class="has-text-centered">
-        <h1 class="title is-1">Create New Product</h1>
+    <main class="container">
+        <div class="columns is-centered">
+            <div class="column is-two-thirds">
+                <article class="card form-card has-background-light">
+                    <form action="/products" method="POST">
+                        <div class="field">
+                            <label class="label">Product Name</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Name" name="name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Product Price</label>
+                            <div class="control">
+                                <input class="input" type="number" placeholder="10" name="price">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Product Image</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="http://www.example.com/image.jpg" name="img">
+                            </div>
+                        </div>
+                        <div class="field form-buttons is-grouped is-grouped-centered">
+                            <div class="control">
+                                <button type="submit" class="button is-info">Create Product</button>
+                            </div>
+                            <div class="control">
+                                <button type="reset" class="button is-dark is-outlined">Reset Form</div>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+        <% for (let i = 0; i < 12; i++) { %>
+            <br>
+        <% } %>
     </main>
 </body>
 </html>

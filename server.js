@@ -10,7 +10,7 @@ app.use('/public', express.static('./public'));
 app.set('view engine', 'ejs');
 
 // db
-const products = require('./products');
+const products = require('./models/products');
 
 // main site index route
 app.get('/', (req, res) => {

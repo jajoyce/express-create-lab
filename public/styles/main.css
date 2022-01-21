@@ -31,3 +31,8 @@ body {
 .control {
     margin-bottom: 20px;
 }
+
+.home-card {
+    padding-top: 20px;
+    margin-bottom: 30px;
+}

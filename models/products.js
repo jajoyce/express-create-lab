@@ -17,7 +17,7 @@ module.exports = [
   { 
     name: "Crib", 
     price: 200, 
-    img: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.hayneedle.com%2Fmgen%2Fmaster%3ASCM096.jpg&f=1&nofb=1"
+    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fprojectnursery.com%2Fwp-content%2Fuploads%2F2013%2F02%2Fkensington-natural.jpg&f=1&nofb=1"
   },
   { 
     name: "Coat", 
